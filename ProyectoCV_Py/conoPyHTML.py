@@ -14,11 +14,10 @@ Z = 2 * U
 # 3. Crear la superficie interactiva en 3D
 fig = go.Figure(data=[go.Surface(
     x=X, y=Y, z=Z, 
-    colorscale='Plasma', # Usamos 'Plasma' para diferenciarlo del ejemplo 1
+    colorscale='Plasma',
     colorbar=dict(title="Eje Z")
 )])
 
-# 4. Diseño estético para el reporte
 fig.update_layout(
     title={
         'text': "Cono Recto de Revolución (Integrante 3)",
